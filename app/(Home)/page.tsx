@@ -10,7 +10,6 @@ import {
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
@@ -24,14 +23,14 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
+import { CardContent } from "@/components/ui/card";
 import { CalendarIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { addDays, format } from "date-fns";
 import { Calendar } from "@/components/ui/calendar";
 import { DateRange } from "react-day-picker";
 
-const HomePage = () => {
+const Page = () => {
   const [formData, setFormData] = useState({
     fromDestination: "",
     toDestination: "",
@@ -383,4 +382,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Page;
