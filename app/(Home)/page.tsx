@@ -31,7 +31,7 @@ import { addDays, format } from "date-fns";
 import { Calendar } from "@/components/ui/calendar";
 import { DateRange } from "react-day-picker";
 
-const page = () => {
+const HomePage = () => {
   const [formData, setFormData] = useState({
     fromDestination: "",
     toDestination: "",
@@ -383,4 +383,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default HomePage;
