@@ -1,5 +1,4 @@
 "use client";
-
 import { Button } from "@/components/ui/button";
 import {
   Popover,
@@ -50,6 +49,8 @@ const page = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log(e.target);
+    console.log("Form Data:", formData);
+
     console.log("date", date);
   };
 

@@ -1,7 +1,7 @@
 "use client";
 import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
 import React, { useState } from "react";
-import { Sheet, SheetContent } from "@/components/ui/sheet";
 const Sidebar = () => {
   const [sideBar, setSideBar] = useState(false);
   const productsCards = [
@@ -376,11 +376,12 @@ const Sidebar = () => {
           <div className="hover:bg-slate-200 m-2 rounded-md  ">
             <button className=" pl-3 py-3 pr-14">
               <div className="flex  gap-x-8">
-                <img
+                <Image
                   src="https://www.kayak.co.in/res/images/flags-svg/in.svg"
-                  alt=""
                   className="w-[18px] h-[18px]"
-                />
+                  alt="Kayak Logo"
+                ></Image>
+                {/* <img src="" alt="" className="w-[18px] h-[18px]" /> */}
 
                 {otherCards[3].name}
               </div>
